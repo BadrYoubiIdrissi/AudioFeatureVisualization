@@ -35,5 +35,6 @@ def gradientAscent(iterate, inputImgData, step, threshold=0.):
         inputImgData += gradsValue * step
         if lossValue <= threshold:
             # some filters get stuck to 0, we can skip them
+            print("failed",end="")
             break
     return lossValue

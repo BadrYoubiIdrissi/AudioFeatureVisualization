@@ -17,7 +17,7 @@ if __name__ == '__main__':
     
     #We load the trained VGG model
 
-    pathToModel = "../gtzan.keras/models/GtzanVGG20181016.h5"
+    pathToModel = "model/model_VGG16_11_12_2018.h5"
     
     #Corresponds to the size of the training mel spectrogram
     
