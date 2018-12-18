@@ -16,7 +16,7 @@ def getIterateFunction(layerDict, layerName, filterIndex, inputTensor):
     # build a loss function that maximizes the activation
     # of the nth filter of the layer considered
     layerOutput = layerDict[layerName].output
-    loss = K.mean(layerOutput[:, :, :, filterIndex])
+    loss = K.mean(layerOutput[:, :, filterIndex])
     
     # compute the gradient of the input picture wrt this loss
     grads = K.gradients(loss, inputTensor)[0]
